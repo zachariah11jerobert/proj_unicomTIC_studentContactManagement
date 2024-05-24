@@ -1,0 +1,13 @@
+Unicom Trainee Contact Management
+
+Display a table with your ( UnicomID , Name , NICnumber )
+* you should able to Add multiple contact number
+* you should be able to add your Permanent Address
+* you should be able to add Temporary Address
+* you should add your GitHub Account URL
+* you should be able to add your Linked in profile
+
+
+* Write a nodejs based console application 
+1. to get user input and store inside the array
+
