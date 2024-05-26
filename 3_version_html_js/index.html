@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Management System</title>
+  </head>
+  <body>
+    <h1>Contact Management System</h1>
+
+    <form id="contactForm">
+      <div>
+        <label for="UnicomID">UnicomID:</label>
+        <input type="text" id="unicomID" required />
+      </div>
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div>
+        <label for="nicNumber">NIC No:</label>
+        <input type="text" id="nicNumber" required />
+      </div>
+
+      <div>
+        <label for="contactNo">Contact Numbers:</label>
+
+        <div id="contactNumbers">
+          <!-- <input
+            type="text"
+            class="contactInput"
+            placeholder="Enter Your Phone Number"
+          /> -->
+        </div>
+
+        <button type="button" id="addContact">
+          Add Contact Number
+        </button>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
