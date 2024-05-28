@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <nav>
+        <h1>UNICOM TRAINEE Contact Manager</h1>
+      </nav>
+    </header>
+
+    <!-- + button -->
+    <button class="popupbtn" onclick="popupshow()">+</button>
+
+    <div class="student-card-container">
+      <div class="student-card">
+        <div id="image-container">
+          <img src="idpic.png" alt="" />
+        </div>
+        <div id="contact-container">
+          <h2 id="id-number">UT0001</h2>
+          <h2 id="name">Kumar</h2>
+          <h2 id="nic-number">200224204071</h2>
+
+          <p>Contact</p>
+          <ul>
+            <li id="contact1">0775327237</li>
+            <li id="contact2">0752373277</li>
+          </ul>
+        </div>
+        <div style="width: 50px">
+          <button class="delbtn" onclick="deleteBtn(event)">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
+          <button class="delbtn" onclick="deleteBtn(event)">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup Box -->
+    <div class="overlay"></div>
+
+    <div class="popupbox">
+      <header class="popup-header">
+        <h1>ADD CONTACT</h1>
+      </header>
+      <div class="input-container">
+        <div class="id-input-container">
+          <input
+            id="id-number-input"
+            type="text"
+            placeholder="UNICOM ID"
+          /><br />
+          <input id="name-input" type="text" placeholder="YOUR NAME" /><br />
+          <input
+            id="nic-number-input"
+            type="text"
+            placeholder="NIC NUMBER"
+          /><br />
+        </div>
+        <div class="contact-number-input-container">
+          <input
+            id="contact1-input"
+            type="number"
+            placeholder="Enter Mobile Number"
+          /><br />
+          <input
+            id="contact2-input"
+            type="number"
+            placeholder="Enter Mobile Number"
+          /><br />
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="submitbtn" onclick="submit()">Submit</button>
+        <!-- <button class="addbtn" onclick="addMobileNumber()">Add Mobile Number</button> -->
+        <button class="classbtn" onclick="popUpClose()">Close</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

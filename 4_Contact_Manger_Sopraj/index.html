@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <button id="openModalBtn" class="modelbutton">+</button>
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" aria-label="Close">&times;</span>
+      <h1 id="modalTitle">Contact Management System</h1>
+      <form id="contactForm">
+        <div>
+          <label for="unicomID">UnicomID:</label>
+          <input type="text" id="unicomID" placeholder="Enter Your Unicom ID" required />
+        </div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter Your Name" required />
+        </div>
+        <div>
+          <label for="nicNumber">NIC No:</label>
+          <input type="text" id="nicNumber" placeholder="Enter your NIC No" required />
+        </div>
+        <div>
+          <label for="contactNo">Contact Numbers:</label>
+          <div id="contactNumbers"></div>
+          <button type="button" id="addContact" class="addconbtn">Add Contact Number</button>
+        </div>
+        <div>
+          <label for="contactImage">Contact Image:</label>
+          <input type="file" id="contactImage" accept="image/*" required />
+        </div>
+        <button type="submit" class="subbtn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+
+ 
+
+</body>
+
+</html>
+

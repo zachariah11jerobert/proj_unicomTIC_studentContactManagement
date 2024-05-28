@@ -1,0 +1,121 @@
+body{
+    background-color: #888;
+}
+
+
+.modal {
+    --gap: 15px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    background-color: #aaa;
+    padding: var(--gap);
+}
+
+.modal-content {
+    background-color: hotpink;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #6e6262;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover{
+    color: black;
+}
+.modelbutton{
+    border-radius: 50%;
+    font-size: 30px ;
+    border: none;
+    cursor: pointer;
+    float: right;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+}
+
+.modelbutton:hover{
+    background-color: red;
+    color: green;
+}
+.contact-block {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    border-radius: 10px;
+    background-color: rgb(74, 74, 233);
+    display: flex;
+    
+}
+input{
+    border-radius: 5px;
+    background-color: pink;
+    padding: 5px 8px;
+    border: 1px solid snow;
+    outline: none;
+}
+.addconbtn{
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: red; 
+  background-image: linear-gradient(to bottom right, red, yellow);
+    border: none;
+}
+.subbtn{
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: red; 
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border: none;
+}
+.addconbtn:hover{
+    background-color: red;
+    color: green;
+}
+.subbtn:hover{
+    background-color: red;
+    color: green;
+}
+
+.contact-block button {
+    margin-right: 10px;
+    font-size: 15px;
+    background-color: rgb(40, 168, 78);
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+  }
+  .contact-block button:hover{
+    background-color: red;
+    color: green;
+  }
+
+  .contact-block img {
+    display: block;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
